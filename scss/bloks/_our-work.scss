@@ -1,0 +1,79 @@
+@use "../mixins";
+
+.our-work {
+  padding: 56px 0;
+
+  &__title-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    width: 719px;
+  }
+  &__title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.2px;
+  }
+  &__desc {
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__list-wrapper {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__list {
+    @include mixins.unstyled-list;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    margin: 0 auto;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+
+    &:nth-child(2n) {
+      flex-flow: row-reverse;
+    }
+  }
+  &__item-title-wrapper {
+    width: 493px;
+  }
+  &__item-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  &__item-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__link-wrapper {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    display: inline-block;
+    text-decoration-line: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    background-color: #00bafc;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+}
+img {
+  display: block;
+  height: auto;
+}
+
+html {
+  height: 100%;
+}
+.site-main {
+  flex-grow: 1;
+}
